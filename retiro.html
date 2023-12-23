@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro</title>
+    <link rel="icon" href="./assets/icons/ATM.png">
+    <link rel="stylesheet" href="./styles/retiroStyles.css">
+
+</head>
+
+<body>
+
+
+    <main>
+
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <section>
+
+            <div class="titulo">
+
+                <h2>Saldo disponible:</h2>
+
+                <h1 id="saldo">$</h1>
+
+                <h2>Montos disponibles:</h2>
+            </div>
+
+            <div class="buttons">
+                <button id="montoBtn-100" onclick="retiro100()">$100</button>
+                <button id="montoBtn-200" onclick="retiro200()">$200</button>
+                <button id="montoBtn-400" onclick="retiro400()">$400</button>
+                <button id="montoBtn-500" onclick="retiro500()">$500</button>
+                <button id="montoBtn-600" onclick="retiro600()">$600</button>
+                <button id="montoBtn-800" onclick="retiro800()">$800</button>
+            </div>
+
+            <div class="amount">
+
+                <h2>Otro monto:</h2>
+    
+                <input id="montoInput" type="number" placeholder="Ingrese el monto deseado:">
+                
+            </div>
+
+            <button id="homeBtn">Regresar al menú principal</button>
+
+        </section>
+
+    </main>
+
+    <script src="./Controllers/retiro.js"></script>
+
+</body>
+
+</html>
